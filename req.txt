@@ -1,0 +1,15 @@
+
+
+python -m venv ai-eraser-env
+source ai-eraser-env/bin/activate  # or ai-eraser-env\Scripts\activate on Windows
+
+
+pip install opencv-python numpy matplotlib segment-anything
+
+pip install torch torchvision
+pip install git+https://github.com/advimman/lama-cleaner.git
+
+
+49.206.8.98
+
+http://49.206.8.98:8080
