@@ -52,12 +52,23 @@ Install dependencies:
 ```bash
 pip install opencv-python numpy
 ```
+🎯 Pretrained Model Weights
+If you’re using the Segment Anything model, include this section in your README.md:
 
----
+md
+Copy
+Edit
+#### Pretrained Models
 
-## 🌐 Demo
+Download the SAM pretrained weights (ViT-H recommended for best quality):
 
-![Before and After](https://user-images.githubusercontent.com/your-demo-link)
+- **ViT-H (Image resolution 1024x1024)**  
+  [Download ViT-H SAM Checkpoint (~2.6 GB)](https://dl.fbaipublicfiles.com/segment_anything/sam_vit_h_4b8939.pth)
+
+To use with SAM:
+```python
+from segment_anything import sam_model_registry
+model = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
 
 ---
 
